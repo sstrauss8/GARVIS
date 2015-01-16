@@ -5,6 +5,7 @@
  *      Author: SAINTS
  */
 
+#include <QThread>
 #include "CommandCreator.h"
 #include "IOManager.h"
 #include "StatusMonitor.h"
@@ -12,14 +13,16 @@
 #ifndef CENTRALMANAGER_H_
 #define CENTRALMANAGER_H_
 
-class C_CentralManager {
+class C_CentralManager: public QThread {
 public:
 	//Attributes
 
 	//Actions
 	C_CentralManager(bool run);
 	virtual ~C_CentralManager();
-	void Run();
+
+protected:
+    void run();
 
 private:
     //Attributes

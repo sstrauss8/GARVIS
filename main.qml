@@ -4,8 +4,8 @@ import QtQuick.Controls 1.1
 ApplicationWindow {
     id: applicationWindow1
     visible: true
-    width: 640
-    height: 480
+    width: 1000
+    height: 600
     title: qsTr("GARVIS")
 
     menuBar: MenuBar {
@@ -20,8 +20,8 @@ ApplicationWindow {
 
     PathView {
         id: pathView1
-        x: 72
-        y: -36
+        x: 264
+        y: -38
         width: 427
         height: 254
         z: 0
@@ -99,11 +99,83 @@ ApplicationWindow {
         }
     }
 
-    Item {
-        id: item1
-        x: 200
-        y: 235
-        width: 200
-        height: 200
+    GroupBox {
+        id: testingGroupbox
+        x: 7
+        y: 244
+        width: 364
+        height: 223
+        title: qsTr("Setup and Configuration")
+
+        Button {
+            id: button1
+            x: 0
+            y: 43
+            text: qsTr("Add New Room")
+            tooltip: "Add and setup a new room"
+            checkable: false
+        }
+
+        Button {
+            id: button2
+            x: 0
+            y: 77
+            text: "Add New Device"
+        }
+
+        Button {
+            id: button3
+            x: -1
+            y: 109
+            text: qsTr("Remove Device")
+        }
+
+        TextArea {
+            id: textArea1
+            x: 103
+            y: 43
+            text: "List of Devices"
+
+            Label {
+                id: label1
+                x: 329
+                y: -15
+                text: "Number of Devices"
+            }
+        }
+    }
+
+    CheckBox {
+        id: checkBox1
+        x: 18
+        y: 272
+        text: qsTr("Smart Decision Mode Enabled")
+        checked: false
+    }
+
+    GroupBox {
+        id: groupBox1
+        x: 428
+        y: 244
+        width: 360
+        height: 223
+        title: qsTr("Room Manager")
+
+        TextArea {
+            id: textArea2
+            x: 105
+            y: 23
+            width: 38
+            height: 23
+            text: "0"
+        }
+    }
+
+    TextArea {
+        id: textArea3
+        x: 568
+        y: 251
+        width: 130
+        height: 24
     }
 }

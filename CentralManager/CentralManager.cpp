@@ -26,23 +26,7 @@ bool C_CentralManager::Initialize(){
 	return true;
 }
 
-void C_CentralManager::Run(){
-
+void C_CentralManager::run(){
     //BlackGPIO test(GPIO_68,output,SecureMode);
-    int count = 0;
-	while(1)
-	{
-	     printf("*************************Central Manager*************************\n");
-         count++;
-         printf("%d", count);
-
-	}
+    printf("********Central Manager Initialization********\n");
 }
-
-/*int main()
-{
-	C_CentralManager manager(true);
-	manager.Run();
-	return 0;
-    //more changes
-}*/
