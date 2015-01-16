@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>bedroom1.jpg</file>
+        <file>livingroom.jpg</file>
+        <file>kitchen.gif</file>
+        <file>bathroom.png</file>
+    </qresource>
+</RCC>
