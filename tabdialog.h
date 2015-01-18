@@ -1,5 +1,6 @@
 /****************************************************************************
 ** Andres is testing
+** we are testing merging
 ** Copyright (C) 2014 Digia Plc and/or its subsidiary(-ies).
 ** Contact: http://www.qt-project.org/legal
 **
