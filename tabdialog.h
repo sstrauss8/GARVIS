@@ -1,5 +1,5 @@
 /****************************************************************************
-** Andres is testing
+** Andres is testing SARAH
 ** Copyright (C) 2014 Digia Plc and/or its subsidiary(-ies).
 ** Contact: http://www.qt-project.org/legal
 **
